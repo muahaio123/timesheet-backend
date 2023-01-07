@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/auth-service/auth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/contact-service/contact-service.iml" filepath="$PROJECT_DIR$/contact-service/contact-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/document-service/document-service.iml" filepath="$PROJECT_DIR$/document-service/document-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/employee-service/employee-service.iml" filepath="$PROJECT_DIR$/employee-service/employee-service.iml" />
@@ -10,7 +10,6 @@
       <module fileurl="file://$PROJECT_DIR$/api-gateway/src/main/main.iml" filepath="$PROJECT_DIR$/api-gateway/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/api-gateway/src/test/test.iml" filepath="$PROJECT_DIR$/api-gateway/src/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/timesheet-backend.iml" filepath="$PROJECT_DIR$/.idea/timesheet-backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/timesheet-default-service/timesheet-default-service.iml" filepath="$PROJECT_DIR$/timesheet-default-service/timesheet-default-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/timesheet-detail-service/timesheet-detail-service.iml" filepath="$PROJECT_DIR$/timesheet-detail-service/timesheet-detail-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/timesheet-summary-service/timesheet-summary-service.iml" filepath="$PROJECT_DIR$/timesheet-summary-service/timesheet-summary-service.iml" />
     </modules>

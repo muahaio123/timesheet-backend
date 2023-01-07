@@ -34,6 +34,7 @@
       <module name="contact-service" options="-parameters" />
       <module name="document-service" options="-parameters" />
       <module name="employee-service" options="-parameters" />
+      <module name="eureka-discovery-service" options="-parameters" />
       <module name="timesheet-default-service" options="-parameters" />
       <module name="timesheet-detail-service" options="-parameters" />
       <module name="timesheet-summary-service" options="-parameters" />

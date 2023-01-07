@@ -209,6 +209,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaDiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eureka-discovery-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.eurekadiscoveryservice.EurekaDiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TimesheetDefaultServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="timesheet-default-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.timesheetdefaultservice.TimesheetDefaultServiceApplication" />

@@ -4,15 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ac7855-2636-4bdc-b4c5-835a86dc5607" name="Changes" comment="update some files">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/auth_service_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/auth_service_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/timesheet_summary_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/timesheet_summary_service_war_exploded.xml" afterDir="false" />
+    <list default="true" id="87ac7855-2636-4bdc-b4c5-835a86dc5607" name="Changes" comment="update microservices modules">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/profile_composite_service_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/profile_composite_service_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/timemsheet_composite_service_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/timemsheet_composite_service_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/timesheet_composite_service_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/timesheet_composite_service_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-composite-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-composite-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-composite-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-composite-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-composite-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-composite-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-composite-service/src/main/java/com/beaconfire/profilecompositeservice/ProfileCompositeServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-composite-service/src/main/java/com/beaconfire/profilecompositeservice/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-composite-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-composite-service/src/test/java/com/beaconfire/profilecompositeservice/ProfileCompositeServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/TimesheetCompositeServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/test/java/com/beaconfire/timesheetcompositeservice/TimesheetCompositeServiceApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/document-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-discovery-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-discovery-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-default-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-default-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-summary-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,17 +101,17 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
     "js.buildTools.gulp.gulp_package_dir": "",
-    "last_opened_file_path": "C:/Users/Long/Desktop/BeaconFire/Final Team Project/timesheet-backend/timesheet-summary-service",
+    "last_opened_file_path": "C:/Users/Long/Desktop/BeaconFire/Final Team Project/timesheet-backend/timesheet-composite-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
-    "spring.configuration.checksum": "1d09875f95bc061844e3b968e1b55e67",
+    "spring.configuration.checksum": "d262717dc9779f1c63b663ca10dfaea9",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -89,7 +122,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ContactServiceApplication">
+  <component name="RunManager" selected="Spring Boot.TimesheetCompositeServiceApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.beaconfire.apigateway.ApiGatewayApplication" />
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beaconfire.apigateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.apigateway.ApiGatewayApplication" />
@@ -138,6 +184,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProfileCompositeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="profile-composite-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.profilecompositeservice.ProfileCompositeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimesheetCompositeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="timesheet-composite-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.timesheetcompositeservice.TimesheetCompositeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TimesheetDefaultServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="timesheet-default-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.timesheetdefaultservice.TimesheetDefaultServiceApplication" />
@@ -171,6 +231,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
@@ -189,6 +250,12 @@
       <workItem from="1673117151272" duration="124000" />
       <workItem from="1673117296358" duration="765000" />
       <workItem from="1673119017318" duration="408000" />
+      <workItem from="1673119434395" duration="394000" />
+      <workItem from="1673125980043" duration="255000" />
+      <workItem from="1673126257403" duration="123000" />
+      <workItem from="1673126400328" duration="1611000" />
+      <workItem from="1673128381325" duration="117000" />
+      <workItem from="1673128516500" duration="865000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1673116200599</created>
@@ -204,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673116332282</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update microservices modules">
+      <created>1673119562449</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673119562449</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +310,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=".gitignore" />
     <MESSAGE value="update some files" />
-    <option name="LAST_COMMIT_MESSAGE" value="update some files" />
+    <MESSAGE value="update microservices modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="update microservices modules" />
   </component>
 </project>

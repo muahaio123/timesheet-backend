@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="contact-service" />
+        <module name="api-gateway" />
+        <module name="timesheet-default-service" />
+        <module name="eureka-discovery-service" />
+        <module name="timesheet-summary-service" />
+        <module name="timesheet-detail-service" />
+        <module name="document-service" />
+        <module name="employee-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.6" />
+      <module name="contact-service" target="1.8" />
+      <module name="document-service" target="1.8" />
+      <module name="employee-service" target="1.8" />
+      <module name="eureka-discovery-service" target="1.8" />
+      <module name="timesheet-default-service" target="1.8" />
+      <module name="timesheet-detail-service" target="1.8" />
+      <module name="timesheet-summary-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="contact-service" options="-parameters" />
+      <module name="document-service" options="-parameters" />
+      <module name="employee-service" options="-parameters" />
+      <module name="timesheet-default-service" options="-parameters" />
+      <module name="timesheet-detail-service" options="-parameters" />
+      <module name="timesheet-summary-service" options="-parameters" />
+    </option>
+  </component>
+</project>

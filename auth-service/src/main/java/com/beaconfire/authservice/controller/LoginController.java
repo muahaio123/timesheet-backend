@@ -44,10 +44,9 @@ public class LoginController {
         }
 
         // Found the user we are looking for
-        Employees employeeRequested = employeesService.findEmployeeByEmail(employeeRequest.getEmail()).get();
         AuthUserDetail authUserDetail = (AuthUserDetail) authentication.getPrincipal();
-        authUserDetail.setEmployeeId(employeeRequested.getId());
-
+        System.out.println(authUserDetail);
+        
         String token = jwtProvider.createToken(authUserDetail);
 
         return EmployeeResponse.builder()

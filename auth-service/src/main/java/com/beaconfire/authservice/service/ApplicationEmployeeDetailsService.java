@@ -40,6 +40,7 @@ public class ApplicationEmployeeDetailsService implements UserDetailsService {
         return AuthUserDetail.builder()
                 .username(employee.getEmail())
                 .password(new BCryptPasswordEncoder().encode(employee.getPassword()))
+                .employeeId(employee.getId())
                 .authorities(getAuthoritiesFromExistingUser(employee))
                 .accountNonExpired(true)
                 .accountNonLocked(true)

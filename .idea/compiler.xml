@@ -27,6 +27,7 @@
       <module name="document-service" target="1.8" />
       <module name="employee-service" target="1.8" />
       <module name="eureka-discovery-service" target="1.8" />
+      <module name="login-service" target="1.8" />
       <module name="profile-composite-service" target="1.8" />
       <module name="timesheet-composite-service" target="1.8" />
       <module name="timesheet-default-service" target="1.8" />
@@ -42,6 +43,7 @@
       <module name="document-service" options="-parameters" />
       <module name="employee-service" options="-parameters" />
       <module name="eureka-discovery-service" options="-parameters" />
+      <module name="login-service" options="-parameters" />
       <module name="profile-composite-service" options="-parameters" />
       <module name="timesheet-composite-service" options="-parameters" />
       <module name="timesheet-default-service" options="-parameters" />

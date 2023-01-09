@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auth-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/contact-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/contact-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/document-service/src/main/java" charset="UTF-8" />
@@ -12,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/employee-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-discovery-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-discovery-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/login-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/login-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/profile-composite-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/profile-composite-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/timesheet-composite-service/src/main/java" charset="UTF-8" />

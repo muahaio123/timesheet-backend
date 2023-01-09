@@ -1,7 +1,6 @@
 package com.beaconfire.timesheetdetailservice.service;
 
 import com.beaconfire.timesheetdetailservice.domain.entity.TimesheetDetail;
-import com.beaconfire.timesheetdetailservice.repository.OwnerRepository;
 import com.beaconfire.timesheetdetailservice.repository.TimesheetDetailRepository;
 import java.util.List;
 import java.util.Optional;

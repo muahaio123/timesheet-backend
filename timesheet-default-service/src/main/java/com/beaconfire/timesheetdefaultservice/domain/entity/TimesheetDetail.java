@@ -1,5 +1,6 @@
-package com.beaconfire.timesheetdetailservice.domain.entity;
+package com.beaconfire.timesheetdefaultservice.domain.entity;
 
+import com.beaconfire.timesheetdefaultservice.domain.entity.Day;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -16,10 +17,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @ToString
 @Document
-public class DefaultTimesheet {
+public class TimesheetDetail {
   @Id
   String id;
   String employeeId;
+  String weekEnding;
   Day day1;
   Day day2;
   Day day3;

@@ -2,7 +2,9 @@ package com.beaconfire.timesheetdetailservice.controller;
 
 import com.beaconfire.timesheetdetailservice.domain.ServiceStatus;
 import com.beaconfire.timesheetdetailservice.domain.entity.TimesheetDetail;
+import com.beaconfire.timesheetdetailservice.domain.entity.DefaultTimesheet;
 import com.beaconfire.timesheetdetailservice.domain.response.MessageResponse;
+import com.beaconfire.timesheetdetailservice.service.TimesheetDefaultService;
 import com.beaconfire.timesheetdetailservice.service.TimesheetService;
 import java.sql.Time;
 import java.util.List;
@@ -20,9 +22,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/timesheet/detail")
 public class TimesheetController {
   TimesheetService timesheetService;
+  TimesheetDefaultService timesheetDefaultService;
   @Autowired
   void setTimesheetService(TimesheetService timesheetService){
     this.timesheetService=timesheetService;
+  }
+  @Autowired
+  void setTimesheetDefaultService(TimesheetDefaultService timesheetDefaultService){
+    this.timesheetDefaultService=timesheetDefaultService;
   }
   @PostMapping("/add")
   public MessageResponse addTimesheetDetail(@RequestBody TimesheetDetail timesheetDetail) {
@@ -36,6 +43,7 @@ public class TimesheetController {
     TimesheetDetail timesheetDetail1=TimesheetDetail.builder()
         .id(timesheetDetail.getId())
         .employeeId(timesheetDetail.getEmployeeId())
+        .weekEnding(timesheetDetail.getWeekEnding())
         .day1(timesheetDetail.getDay1())
         .day2(timesheetDetail.getDay2())
         .day3(timesheetDetail.getDay3())
@@ -46,6 +54,23 @@ public class TimesheetController {
         .build();
 
     timesheetService.addTimesheetDetail(timesheetDetail1);
+
+    if(!timesheetDefaultService.findByEmployeeId(timesheetDetail.getEmployeeId()).isPresent()){
+      DefaultTimesheet defaultTimesheet=DefaultTimesheet.builder()
+          .id(timesheetDetail.getId())
+          .employeeId(timesheetDetail.getEmployeeId())
+          .day1(timesheetDetail.getDay1())
+          .day2(timesheetDetail.getDay2())
+          .day3(timesheetDetail.getDay3())
+          .day4(timesheetDetail.getDay4())
+          .day5(timesheetDetail.getDay5())
+          .day6(timesheetDetail.getDay6())
+          .day7(timesheetDetail.getDay7())
+          .build();
+
+      timesheetDefaultService.addOrUpdateTimesheetDefault(defaultTimesheet);
+
+    }
 
     return MessageResponse.builder()
         .serviceStatus(
@@ -66,6 +91,7 @@ public class TimesheetController {
       TimesheetDetail timesheetDetail2=TimesheetDetail.builder()
           .id(timesheetDetail1.get().getId())
           .employeeId(timesheetDetail.getEmployeeId())
+          .weekEnding(timesheetDetail.getWeekEnding())
           .day1(timesheetDetail.getDay1())
           .day2(timesheetDetail.getDay2())
           .day3(timesheetDetail.getDay3())
@@ -89,6 +115,7 @@ public class TimesheetController {
       TimesheetDetail timesheetDetail2=TimesheetDetail.builder()
           .id(timesheetDetail.getId())
           .employeeId(timesheetDetail.getEmployeeId())
+          .weekEnding(timesheetDetail.getWeekEnding())
           .day1(timesheetDetail.getDay1())
           .day2(timesheetDetail.getDay2())
           .day3(timesheetDetail.getDay3())

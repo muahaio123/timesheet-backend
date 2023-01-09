@@ -29,7 +29,7 @@
       <module name="eureka-discovery-service" target="1.5" />
       <module name="profile-composite-service" target="1.8" />
       <module name="timesheet-composite-service" target="1.8" />
-      <module name="timesheet-default-service" target="1.5" />
+      <module name="timesheet-default-service" target="1.8" />
       <module name="timesheet-detail-service" target="1.8" />
       <module name="timesheet-summary-service" target="1.5" />
     </bytecodeTargetLevel>
@@ -44,7 +44,7 @@
       <module name="eureka-discovery-service" options="" />
       <module name="profile-composite-service" options="-parameters" />
       <module name="timesheet-composite-service" options="-parameters" />
-      <module name="timesheet-default-service" options="" />
+      <module name="timesheet-default-service" options="-parameters" />
       <module name="timesheet-detail-service" options="-parameters" />
       <module name="timesheet-summary-service" options="" />
     </option>

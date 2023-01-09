@@ -1,9 +1,6 @@
 package com.beaconfire.authservice.security;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -11,6 +8,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Setter
+@Getter
 @Builder
 @ToString
 @AllArgsConstructor
@@ -18,6 +16,7 @@ public class AuthUserDetail implements UserDetails {
     private String username;
     private String password;
     private int employeeId;
+    private long expireInMilliseconds;
     private boolean accountNonExpired;
     private boolean accountNonLocked;
     private boolean credentialsNonExpired;
@@ -57,9 +56,5 @@ public class AuthUserDetail implements UserDetails {
     @Override
     public boolean isEnabled() {
         return this.enabled;
-    }
-
-    public int getEmployeeId() {
-        return this.employeeId;
     }
 }

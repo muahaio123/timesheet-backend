@@ -21,19 +21,16 @@ public class ContactController {
     }
 
     @GetMapping
-    @ResponseBody
     public List<Contact> getAllContact() {
         return contactService.getAllContacts();
     }
 
     @GetMapping("getContactByID/{id}")
-    @ResponseBody
     public Contact getContactByID(@PathVariable Integer id) {
         return contactService.getContactByID(id);
     }
 
     @GetMapping("getContactsByEmployeeID/{id}")
-    @ResponseBody
     public List<Contact> getContactByEmployeeID(@PathVariable Integer id) {
         return contactService.getContactByEmployeeID(id);
     }

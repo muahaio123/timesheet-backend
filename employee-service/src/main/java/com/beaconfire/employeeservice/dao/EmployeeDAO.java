@@ -15,5 +15,5 @@ public interface EmployeeDAO {
 
 //    List<Employee> getContactByEmployeeID(Integer id);
 
-    Boolean deleteEmployee(Integer id);
+    void deleteEmployee(Integer id);
 }

@@ -32,9 +32,9 @@ public class EmployeeDaoImpl extends AbstractHibernateDAO<Employee> implements E
     }
 
     @Override
-    public Boolean deleteEmployee(Integer id) {
+    public void deleteEmployee(Integer id) {
         Query query = getCurrentSession().createQuery("delete from employees where id = :id");
         query.setInteger("id", id);
-        return query.executeUpdate() != 0;
+        query.executeUpdate();
     }
 }

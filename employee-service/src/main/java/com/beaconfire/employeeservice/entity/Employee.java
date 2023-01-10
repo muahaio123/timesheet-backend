@@ -2,21 +2,24 @@ package com.beaconfire.employeeservice.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Getter
 @Setter
 @Builder
-@Entity
+@Entity(name="employees")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee {
+@ToString
+@Data
+@Table(name="employees")
+public class Employee implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column
     private String email;
+    @Column
     private String password;
 }

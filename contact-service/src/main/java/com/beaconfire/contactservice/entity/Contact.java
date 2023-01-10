@@ -18,9 +18,14 @@ public class Contact implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column
     private Integer employeeId;
+    @Column
     private String name;
-    private String phone;
+    @Column
+    private String phoneNumber;
+    @Column
     private String address;
+    @Column
     private Boolean isEmergency;
 }

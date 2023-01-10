@@ -27,7 +27,7 @@ public class JwtFilter extends OncePerRequestFilter {
         System.out.println("In doFilterInternal!");
         System.out.println("URI: " + request.getRequestURI());
 
-        if (!request.getRequestURI().contains("/login")) {
+        if (!request.getRequestURI().contains("/login") && !request.getRequestURI().contains("/register")) {
             // extract jwt from request, generate an AuthUserDetail object
             Optional<AuthUserDetail> authUserDetailOptional = jwtProvider.resolveToken(request);
 

@@ -4,117 +4,40 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
     <list default="true" id="87ac7855-2636-4bdc-b4c5-835a86dc5607" name="Changes" comment="added functionality to verify token for all requests going through the gateway, while whitelisting some of them">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/beaconfire/apigateway/config/GatewayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/beaconfire/apigateway/filter/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/beaconfire/apigateway/router/RouterValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/beaconfire/apigateway/security/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/api_gateway_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/api_gateway_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/security/AuthUserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/security/AuthUserDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/security/JwtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/security/JwtProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
-=======
-    <list default="true" id="87ac7855-2636-4bdc-b4c5-835a86dc5607" name="Changes" comment="-finish Timesheet-detail and timesheet-default service">
-      <change afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity/TimesheetStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity/TimesheetSummary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/repository/TimesheetSummaryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/controller/TimesheetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/ServiceStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/entity/Day.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/entity/TimesheetDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/entity/TimesheetStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/entity/TimesheetSummary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/request/TimesheetDetailRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/response/MessageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/repository/TimesheetDetailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/repository/TimesheetSummaryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/service/TimesheetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/timesheet_summary_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/timesheet_summary_service_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-default-service/src/main/java/com/beaconfire/timesheetdefaultservice/domain/entity/TimesheetDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-default-service/src/main/java/com/beaconfire/timesheetdefaultservice/domain/entity/TimesheetDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/controller/TimesheetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/controller/TimesheetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity/TimesheetDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity/TimesheetDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/repository/TimesheetDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/repository/TimesheetDetailRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/service/TimesheetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/service/TimesheetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-summary-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-summary-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-summary-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/resources/application.properties" afterDir="false" />
->>>>>>> zhenren
-=======
-    <list default="true" id="87ac7855-2636-4bdc-b4c5-835a86dc5607" name="Changes" comment="update microservices modules">
-      <change afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/config/HibernateConfigUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/controller/ContactController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/dao/ContactDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/entity/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/service/ContactService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact-service/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/beaconfire/employeeservice/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/beaconfire/employeeservice/dao/EmployeeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/beaconfire/employeeservice/entity/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/beaconfire/employeeservice/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/eureka_discovery_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/eureka_discovery_service_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/domain/RegisterResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b22f80c-a489-45fe-903f-4a9974879c62.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b22f80c-a489-45fe-903f-4a9974879c62/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b22f80c-a489-45fe-903f-4a9974879c62/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b22f80c-a489-45fe-903f-4a9974879c62/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b22f80c-a489-45fe-903f-4a9974879c62/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_14_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_7_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_4_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_record_codec_4_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_4_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_4_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_3_4_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/security/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/ContactServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/ContactServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employee-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/pom.xml" afterDir="false" />
->>>>>>> jenny2
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-<<<<<<< HEAD
-=======
         <option value="Interface" />
->>>>>>> zhenren
         <option value="Class" />
       </list>
     </option>
   </component>
-=======
->>>>>>> jenny2
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -123,7 +46,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-<<<<<<< HEAD
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;
@@ -132,8 +54,6 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-=======
->>>>>>> jenny2
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -143,20 +63,7 @@
     </option>
   </component>
   <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
-      </map>
-    </option>
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -176,35 +83,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "js.buildTools.gulp.gulp_package_dir": "",
-<<<<<<< HEAD
-    "last_opened_file_path": "C:/Users/Long/Desktop/BeaconFire/Final Team Project/timesheet-backend/api-gateway/src/main/java/com/beaconfire/apigateway",
-=======
-    "last_opened_file_path": "M:/Beaconfire/Assignment/Project3/timesheet-backend/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity",
->>>>>>> zhenren
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "spring.configuration.checksum": "fbad6dbb22b49118fc7a54f1232c0119",
+    "spring.configuration.checksum": "e9291322e7d7064bb222f478630844f1",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -215,13 +104,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-<<<<<<< HEAD
       <recent name="C:\Users\Long\Desktop\BeaconFire\Final Team Project\timesheet-backend\api-gateway\src\main\java\com\beaconfire\apigateway" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Long\Desktop\BeaconFire\Final Team Project\timesheet-backend\api-gateway\src\main\java\com\beaconfire\apigateway" />
       <recent name="C:\Users\Long\Desktop\BeaconFire\Final Team Project\timesheet-backend\api-gateway\src\main\java\com\beaconfire\apigateway\filter" />
-=======
       <recent name="M:\Beaconfire\Assignment\Project3\timesheet-backend\timesheet-detail-service\src\main\java\com\beaconfire\timesheetdetailservice\domain\entity" />
       <recent name="M:\Beaconfire\Assignment\Project3\timesheet-backend\timesheet-summary-service\src\main\java\com\beaconfire\timesheetsummaryservice" />
       <recent name="M:\Beaconfire\Assignment\Project3\timesheet-backend\timesheet-default-service\src\main\java\com\beaconfire\timesheetdefaultservice" />
@@ -234,17 +121,7 @@
       <recent name="com.beaconfire.timesheetsummaryservice.domain.entity" />
       <recent name="com.beaconfire.timesheetsummaryservice.service" />
       <recent name="com.beaconfire.timesheetsummaryservice.repository" />
->>>>>>> zhenren
     </key>
-=======
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
->>>>>>> jenny2
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -253,7 +130,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ContactServiceApplication">
+  <component name="RunManager" selected="Spring Boot.TimesheetDefaultServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.beaconfire.apigateway.ApiGatewayApplication" />
       <module name="main" />
@@ -282,13 +159,13 @@
     </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.apigateway.ApiGatewayApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.beaconfire.apigateway.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.apigateway.ApiGatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -373,6 +250,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.ContactServiceApplication" />
       <item itemvalue="Application.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.TimesheetDetailServiceApplication" />
       <item itemvalue="Spring Boot.TimesheetDefaultServiceApplication" />
@@ -388,8 +266,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ContactServiceApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
+        <item itemvalue="Application.ContactServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
@@ -413,26 +291,21 @@
       <workItem from="1673126257403" duration="123000" />
       <workItem from="1673126400328" duration="1611000" />
       <workItem from="1673128381325" duration="117000" />
-<<<<<<< HEAD
-<<<<<<< HEAD
       <workItem from="1673128516500" duration="1063000" />
       <workItem from="1673227756043" duration="1189000" />
       <workItem from="1673228954051" duration="4240000" />
       <workItem from="1673281762576" duration="9706000" />
-=======
       <workItem from="1673128516500" duration="865000" />
       <workItem from="1673142766849" duration="1565000" />
       <workItem from="1673144344804" duration="307000" />
       <workItem from="1673197888206" duration="15955000" />
       <workItem from="1673296233450" duration="14013000" />
->>>>>>> zhenren
-=======
       <workItem from="1673128516500" duration="865000" />
       <workItem from="1673301873690" duration="21000" />
       <workItem from="1673301913436" duration="43000" />
       <workItem from="1673302003757" duration="847000" />
       <workItem from="1673322807444" duration="5000" />
->>>>>>> jenny2
+      <workItem from="1673373931175" duration="2254000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1673116200599</created>
@@ -455,24 +328,6 @@
       <option name="project" value="LOCAL" />
       <updated>1673119562449</updated>
     </task>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <task id="LOCAL-00004" summary="update microservices modules">
-      <created>1673129496250</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1673129496250</updated>
-    </task>
-    <task id="LOCAL-00005" summary="update codes for api gateway and auth service">
-      <created>1673294750117</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1673294750117</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
-=======
     <task id="LOCAL-00004" summary="-finish Timesheet-detail crud operation">
       <created>1673279770250</created>
       <option name="number" value="00004" />
@@ -494,11 +349,7 @@
       <option name="project" value="LOCAL" />
       <updated>1673295779463</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
->>>>>>> zhenren
-=======
     <option name="localTasksCounter" value="4" />
->>>>>>> jenny2
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,14 +382,10 @@
     <MESSAGE value=".gitignore" />
     <MESSAGE value="update some files" />
     <MESSAGE value="update microservices modules" />
-<<<<<<< HEAD
     <MESSAGE value="update codes for api gateway and auth service" />
     <MESSAGE value="added functionality to verify token for all requests going through the gateway, while whitelisting some of them" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functionality to verify token for all requests going through the gateway, while whitelisting some of them" />
-=======
     <MESSAGE value="-finish Timesheet-detail crud operation" />
     <MESSAGE value="-finish Timesheet-detail and timesheet-default service" />
     <option name="LAST_COMMIT_MESSAGE" value="-finish Timesheet-detail and timesheet-default service" />
->>>>>>> zhenren
   </component>
 </project>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="87ac7855-2636-4bdc-b4c5-835a86dc5607" name="Changes" comment="added functionality to verify token for all requests going through the gateway, while whitelisting some of them">
       <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/beaconfire/apigateway/config/GatewayConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/beaconfire/apigateway/filter/AuthenticationFilter.java" afterDir="false" />
@@ -16,6 +17,33 @@
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/security/AuthUserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/security/AuthUserDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/security/JwtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/security/JwtProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
+=======
+    <list default="true" id="87ac7855-2636-4bdc-b4c5-835a86dc5607" name="Changes" comment="-finish Timesheet-detail and timesheet-default service">
+      <change afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity/TimesheetStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity/TimesheetSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/repository/TimesheetSummaryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/controller/TimesheetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/ServiceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/entity/Day.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/entity/TimesheetDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/entity/TimesheetStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/entity/TimesheetSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/request/TimesheetDetailRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/response/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/repository/TimesheetDetailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/repository/TimesheetSummaryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/service/TimesheetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/timesheet_summary_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/timesheet_summary_service_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-default-service/src/main/java/com/beaconfire/timesheetdefaultservice/domain/entity/TimesheetDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-default-service/src/main/java/com/beaconfire/timesheetdefaultservice/domain/entity/TimesheetDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/controller/TimesheetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/controller/TimesheetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity/TimesheetDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity/TimesheetDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/repository/TimesheetDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/repository/TimesheetDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/service/TimesheetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/service/TimesheetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-summary-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-summary-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-summary-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/resources/application.properties" afterDir="false" />
+>>>>>>> zhenren
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +53,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="Interface" />
+>>>>>>> zhenren
         <option value="Class" />
       </list>
     </option>
@@ -42,6 +74,9 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -77,11 +112,14 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
     "js.buildTools.gulp.gulp_package_dir": "",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/Long/Desktop/BeaconFire/Final Team Project/timesheet-backend/api-gateway/src/main/java/com/beaconfire/apigateway",
+=======
+    "last_opened_file_path": "M:/Beaconfire/Assignment/Project3/timesheet-backend/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity",
+>>>>>>> zhenren
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,8 +128,9 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
-    "spring.configuration.checksum": "d262717dc9779f1c63b663ca10dfaea9",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "spring.configuration.checksum": "fbad6dbb22b49118fc7a54f1232c0119",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -102,11 +141,26 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\Long\Desktop\BeaconFire\Final Team Project\timesheet-backend\api-gateway\src\main\java\com\beaconfire\apigateway" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Long\Desktop\BeaconFire\Final Team Project\timesheet-backend\api-gateway\src\main\java\com\beaconfire\apigateway" />
       <recent name="C:\Users\Long\Desktop\BeaconFire\Final Team Project\timesheet-backend\api-gateway\src\main\java\com\beaconfire\apigateway\filter" />
+=======
+      <recent name="M:\Beaconfire\Assignment\Project3\timesheet-backend\timesheet-detail-service\src\main\java\com\beaconfire\timesheetdetailservice\domain\entity" />
+      <recent name="M:\Beaconfire\Assignment\Project3\timesheet-backend\timesheet-summary-service\src\main\java\com\beaconfire\timesheetsummaryservice" />
+      <recent name="M:\Beaconfire\Assignment\Project3\timesheet-backend\timesheet-default-service\src\main\java\com\beaconfire\timesheetdefaultservice" />
+      <recent name="M:\Beaconfire\Assignment\Project3\timesheet-backend\timesheet-detail-service\src\main\java\com\beaconfire\timesheetdetailservice\domain" />
+      <recent name="M:\Beaconfire\Assignment\Project3\timesheet-backend\timesheet-detail-service\src\main\java\com\beaconfire\timesheetdetailservice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.beaconfire.timesheetdetailservice.repository" />
+      <recent name="com.beaconfire.timesheetsummaryservice.controller" />
+      <recent name="com.beaconfire.timesheetsummaryservice.domain.entity" />
+      <recent name="com.beaconfire.timesheetsummaryservice.service" />
+      <recent name="com.beaconfire.timesheetsummaryservice.repository" />
+>>>>>>> zhenren
     </key>
   </component>
   <component name="RunDashboard">
@@ -222,6 +276,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.TimesheetDetailServiceApplication" />
+      <item itemvalue="Spring Boot.TimesheetDefaultServiceApplication" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
+      <item itemvalue="Spring Boot.ContactServiceApplication" />
+      <item itemvalue="Spring Boot.DocumentServiceApplication" />
+      <item itemvalue="Spring Boot.EmployeeServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaDiscoveryServiceApplication" />
+      <item itemvalue="Spring Boot.ProfileCompositeServiceApplication" />
+      <item itemvalue="Spring Boot.TimesheetCompositeServiceApplication" />
+      <item itemvalue="Spring Boot.TimesheetSummaryServiceApplication" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
@@ -252,10 +320,18 @@
       <workItem from="1673126257403" duration="123000" />
       <workItem from="1673126400328" duration="1611000" />
       <workItem from="1673128381325" duration="117000" />
+<<<<<<< HEAD
       <workItem from="1673128516500" duration="1063000" />
       <workItem from="1673227756043" duration="1189000" />
       <workItem from="1673228954051" duration="4240000" />
       <workItem from="1673281762576" duration="9706000" />
+=======
+      <workItem from="1673128516500" duration="865000" />
+      <workItem from="1673142766849" duration="1565000" />
+      <workItem from="1673144344804" duration="307000" />
+      <workItem from="1673197888206" duration="15955000" />
+      <workItem from="1673296233450" duration="14013000" />
+>>>>>>> zhenren
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1673116200599</created>
@@ -278,6 +354,7 @@
       <option name="project" value="LOCAL" />
       <updated>1673119562449</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00004" summary="update microservices modules">
       <created>1673129496250</created>
       <option name="number" value="00004" />
@@ -293,6 +370,30 @@
       <updated>1673294750117</updated>
     </task>
     <option name="localTasksCounter" value="6" />
+=======
+    <task id="LOCAL-00004" summary="-finish Timesheet-detail crud operation">
+      <created>1673279770250</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673279770250</updated>
+    </task>
+    <task id="LOCAL-00005" summary="-finish Timesheet-detail crud operation">
+      <created>1673279789544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673279789544</updated>
+    </task>
+    <task id="LOCAL-00006" summary="-finish Timesheet-detail and timesheet-default service">
+      <created>1673295779463</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673295779463</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+>>>>>>> zhenren
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,8 +426,14 @@
     <MESSAGE value=".gitignore" />
     <MESSAGE value="update some files" />
     <MESSAGE value="update microservices modules" />
+<<<<<<< HEAD
     <MESSAGE value="update codes for api gateway and auth service" />
     <MESSAGE value="added functionality to verify token for all requests going through the gateway, while whitelisting some of them" />
     <option name="LAST_COMMIT_MESSAGE" value="added functionality to verify token for all requests going through the gateway, while whitelisting some of them" />
+=======
+    <MESSAGE value="-finish Timesheet-detail crud operation" />
+    <MESSAGE value="-finish Timesheet-detail and timesheet-default service" />
+    <option name="LAST_COMMIT_MESSAGE" value="-finish Timesheet-detail and timesheet-default service" />
+>>>>>>> zhenren
   </component>
 </project>

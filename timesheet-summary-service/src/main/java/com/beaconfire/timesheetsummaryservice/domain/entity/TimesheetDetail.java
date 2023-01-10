@@ -1,5 +1,6 @@
 package com.beaconfire.timesheetsummaryservice.domain.entity;
 
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -29,5 +30,6 @@ public class TimesheetDetail {
   Day day5;
   Day day6;
   Day day7;
+  List<Link> linkList;
 
 }

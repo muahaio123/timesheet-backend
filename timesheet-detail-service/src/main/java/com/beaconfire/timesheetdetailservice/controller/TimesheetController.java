@@ -120,6 +120,7 @@ public class TimesheetController {
         statusArrayList.add(TimesheetStatus.builder()
             .weekEnding(timesheetDetail.getWeekEnding())
             .approvalStatus("N/A")
+            .submissionStatus("Not Started")
             .totalHours(timesheetDetail.getTotalHours())
             .build());
         timesheetSummary.setTimesheetStatusList(statusArrayList);
@@ -128,6 +129,7 @@ public class TimesheetController {
         statusArrayList.add(TimesheetStatus.builder()
             .weekEnding(timesheetDetail.getWeekEnding())
             .approvalStatus("N/A")
+            .submissionStatus("Not Started")
             .totalHours(timesheetDetail.getTotalHours())
             .build());
         TimesheetSummary timesheetSummary = TimesheetSummary.builder()
@@ -191,15 +193,15 @@ public class TimesheetController {
     timesheetService.deleteByWeekEndingAndIdTimesheetDetail(employeeId, weekEnding);
     Optional<TimesheetSummary> timesheetSummary = timesheetService.findTimesheetSummaryByEmployeeId(
         employeeId);
-    System.out.println("here"+timesheetSummary.get());
+    System.out.println("here" + timesheetSummary.get());
     if (timesheetSummary.isPresent()) {
       ArrayList<TimesheetStatus> statusArrayList = (ArrayList<TimesheetStatus>) timesheetSummary.get()
           .getTimesheetStatusList();
       for (TimesheetStatus timesheetStatus : statusArrayList) {
         if (timesheetStatus.getWeekEnding().equals(weekEnding)) {
-          System.out.println("i'm here to delete"+weekEnding);
+          System.out.println("i'm here to delete" + weekEnding);
           statusArrayList.remove(timesheetStatus);
-          if(statusArrayList.size()==0){
+          if (statusArrayList.size() == 0) {
             timesheetService.deleteTimesheetSummary(timesheetSummary.get());
           }
           timesheetSummary.get().setTimesheetStatusList(statusArrayList);
@@ -208,6 +210,6 @@ public class TimesheetController {
         }
       }
     }
-      return "success";
-    }
+    return "success";
   }
+}

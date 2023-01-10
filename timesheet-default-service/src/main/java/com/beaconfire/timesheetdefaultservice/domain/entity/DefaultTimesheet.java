@@ -21,6 +21,7 @@ public class DefaultTimesheet {
   @Id
   String id;
   String employeeId;
+  String totalHours;
   Day day1;
   Day day2;
   Day day3;

@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Getter
@@ -16,17 +15,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @ToString
 @Document
-public class DefaultTimesheet {
-  @Id
-  String id;
-  String employeeId;
-  String totalHours;
-  Day day1;
-  Day day2;
-  Day day3;
-  Day day4;
-  Day day5;
-  Day day6;
-  Day day7;
+public class Link {
+  String link;
+  String type;
 
 }

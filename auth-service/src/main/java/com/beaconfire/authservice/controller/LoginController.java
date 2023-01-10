@@ -40,6 +40,7 @@ public class LoginController {
         try{
             authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(employeeRequest.getEmail(), employeeRequest.getPassword()));
         } catch (AuthenticationException e) {
+            System.out.println("In catch!");
             throw new BadCredentialsException("Provided credential is invalid.");
         }
 

@@ -17,12 +17,14 @@
         <module name="timesheet-detail-service" />
         <module name="timesheet-summary-service" />
         <module name="employee-service" />
+        <module name="document-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="1.8" />
       <module name="auth-service" target="1.8" />
       <module name="contact-service" target="1.8" />
+      <module name="document-service" target="1.8" />
       <module name="employee-service" target="1.8" />
       <module name="eureka-discovery-service" target="1.8" />
       <module name="profile-composite-service" target="1.8" />
@@ -37,6 +39,7 @@
       <module name="api-gateway" options="-parameters" />
       <module name="auth-service" options="-parameters" />
       <module name="contact-service" options="-parameters" />
+      <module name="document-service" options="-parameters" />
       <module name="employee-service" options="-parameters" />
       <module name="eureka-discovery-service" options="-parameters" />
       <module name="profile-composite-service" options="-parameters" />

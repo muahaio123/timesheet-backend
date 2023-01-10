@@ -126,7 +126,7 @@ public class DocumentController {
 
     @PostMapping("/upload")
     public String uploadFile(@RequestParam("employeeId") int employeeId, @RequestParam("timeSheetId") int timesheetId,
-                                             @RequestParam("type") String type, @RequestParam("file") MultipartFile file) throws Exception{
+                             @RequestParam("type") String type, @RequestParam("file") MultipartFile file) throws Exception{
         try{
             String url  = documentService.uploadFile(file);
             Document document = Document.builder()
@@ -152,6 +152,5 @@ public class DocumentController {
         String fileName = parts[parts.length - 1];
         documentService.deleteFileFromS3(fileName);
         documentService.deleteByDocumentId(id);
-
     }
 }

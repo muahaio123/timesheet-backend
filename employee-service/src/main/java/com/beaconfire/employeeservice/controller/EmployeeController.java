@@ -21,13 +21,11 @@ public class EmployeeController {
     }
 
     @GetMapping
-    @ResponseBody
     public List<Employee> getAllEmployees() {
         return employeeService.getAllEmployees();
     }
 
     @GetMapping("/getEmployeeById/{id}")
-    @ResponseBody
     public Employee getEmployeeById(@PathVariable Integer id) {
         return employeeService.getEmployeeById(id);
     }

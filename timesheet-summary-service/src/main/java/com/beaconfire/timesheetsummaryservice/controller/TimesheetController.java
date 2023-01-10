@@ -45,7 +45,6 @@ public class TimesheetController {
         .message("New TimeSheet summary saved")
         .build();
   }
-  @PostMapping("/")
   @DeleteMapping("/delete/{id}")
   public MessageResponse deleteTimesheetSummary(@PathVariable String id){
     TimesheetSummary timesheetSummary=timesheetService.findTimesheetSummaryByEmployeeId(id).get();

@@ -1,13 +1,11 @@
 package com.beaconfire.timesheetsummaryservice.domain.entity;
 
-import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Getter
@@ -17,19 +15,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @ToString
 @Document
-public class TimesheetDetail {
-  @Id
-  String id;
-  String employeeId;
-  String weekEnding;
-  String totalHours;
-  Day day1;
-  Day day2;
-  Day day3;
-  Day day4;
-  Day day5;
-  Day day6;
-  Day day7;
-  List<Link> linkList;
+public class Link {
+  String link;
+  String type;
 
 }

@@ -7,6 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="contact-service" />
+        <module name="auth-service" />
+        <module name="timesheet-composite-service" />
+        <module name="profile-composite-service" />
+        <module name="timesheet-default-service" />
+        <module name="api-gateway" />
+        <module name="eureka-discovery-service" />
+        <module name="timesheet-detail-service" />
+        <module name="timesheet-summary-service" />
+        <module name="employee-service" />
+        <module name="document-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

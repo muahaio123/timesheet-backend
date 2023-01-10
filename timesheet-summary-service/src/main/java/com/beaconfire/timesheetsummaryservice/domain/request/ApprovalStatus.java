@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class SubmissionStatus {
+public class ApprovalStatus {
   String weekEnding;
-  String submissionStatus;
+  String approvalStatus;
 }

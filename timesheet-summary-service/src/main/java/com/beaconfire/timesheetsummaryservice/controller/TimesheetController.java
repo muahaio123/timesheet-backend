@@ -4,6 +4,7 @@ import com.beaconfire.timesheetsummaryservice.domain.ServiceStatus;
 import com.beaconfire.timesheetsummaryservice.domain.entity.TimesheetDetail;
 import com.beaconfire.timesheetsummaryservice.domain.entity.TimesheetStatus;
 import com.beaconfire.timesheetsummaryservice.domain.entity.TimesheetSummary;
+import com.beaconfire.timesheetsummaryservice.domain.request.ApprovalStatus;
 import com.beaconfire.timesheetsummaryservice.domain.request.SubmissionStatus;
 import com.beaconfire.timesheetsummaryservice.domain.response.MessageResponse;
 import com.beaconfire.timesheetsummaryservice.service.TimesheetService;
@@ -57,7 +58,7 @@ public class TimesheetController {
         .message("New TimeSheet summary saved")
         .build();
   }
-  @PostMapping("/edit")
+  @PostMapping("/edit/submissionStatus")
   public MessageResponse editTimesheetSummarySubmissionStatus(@RequestBody SubmissionStatus submissionStatus){
     //TODO change the hardcode employeeId;
     String employeeId="1";
@@ -66,7 +67,7 @@ public class TimesheetController {
     if(timesheetSummary.isPresent()){
       for(TimesheetStatus timesheetStatus:timesheetSummary.get().getTimesheetStatusList()){
         if(timesheetStatus.getWeekEnding().equals(weekEnding)){
-          timesheetStatus.setApprovalStatus(submissionStatus.getApprovalStatus());
+          timesheetStatus.setSubmissionStatus(submissionStatus.getSubmissionStatus());
           timesheetSummary.get().setTimesheetStatusList(timesheetSummary.get().getTimesheetStatusList());
           break;
         }
@@ -79,7 +80,43 @@ public class TimesheetController {
                   .success(true)
                   .build()
           )
-          .message("Successfully "+submissionStatus.getApprovalStatus())
+          .message("Successfully "+submissionStatus.getSubmissionStatus())
+          .build();
+    }
+    else{
+      return MessageResponse.builder()
+          .serviceStatus(
+              ServiceStatus.builder()
+                  .success(true)
+                  .build()
+          )
+          .message("not found data")
+          .build();
+    }
+  }
+  @PostMapping("/edit/approvalStatus")
+  public MessageResponse editTimesheetSummaryApprovalStatus(@RequestBody ApprovalStatus approvalStatus){
+    //TODO change the hardcode employeeId;
+    String employeeId="1";
+    String weekEnding=approvalStatus.getWeekEnding();
+    Optional<TimesheetSummary> timesheetSummary=timesheetService.findTimesheetSummaryByEmployeeId(employeeId);
+    if(timesheetSummary.isPresent()){
+      for(TimesheetStatus timesheetStatus:timesheetSummary.get().getTimesheetStatusList()){
+        if(timesheetStatus.getWeekEnding().equals(weekEnding)){
+          timesheetStatus.setApprovalStatus(approvalStatus.getApprovalStatus());
+          timesheetSummary.get().setTimesheetStatusList(timesheetSummary.get().getTimesheetStatusList());
+          break;
+        }
+      }
+      timesheetService.saveTimesheetSummary(timesheetSummary.get());
+
+      return MessageResponse.builder()
+          .serviceStatus(
+              ServiceStatus.builder()
+                  .success(true)
+                  .build()
+          )
+          .message("Successfully "+approvalStatus.getApprovalStatus())
           .build();
     }
     else{

@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7cd0a01-71e1-42d6-9dc0-48e33cc3088c" name="Changes" comment="-add Link for timesheet detail">
-      <change afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/scheduling/WeekUpdateScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/request/SubmissionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/scheduling/WeekUpdateScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="c7cd0a01-71e1-42d6-9dc0-48e33cc3088c" name="Changes" comment="-addding crontab for each Sat add a new timesheet detail and one line in timesummary">
+      <change afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/request/ApprovalStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-default-service/src/main/java/com/beaconfire/timesheetdefaultservice/domain/entity/DefaultTimesheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-default-service/src/main/java/com/beaconfire/timesheetdefaultservice/domain/entity/DefaultTimesheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/TimesheetDetailServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/TimesheetDetailServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity/DefaultTimesheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/domain/entity/DefaultTimesheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-summary-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-summary-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/TimesheetSummaryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/TimesheetSummaryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/controller/TimesheetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/controller/TimesheetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/controller/TimesheetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/controller/TimesheetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/request/SubmissionStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-summary-service/src/main/java/com/beaconfire/timesheetsummaryservice/domain/request/SubmissionStatus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +105,7 @@
       <recent name="M:\Beaconfire\Assignment\Project3\timesheet-backend\timesheet-detail-service\src\main\java\com\beaconfire\timesheetdetailservice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.beaconfire.timesheetsummaryservice.domain.request" />
       <recent name="com.beaconfire.timesheetsummaryservice.domain.entity" />
     </key>
   </component>
@@ -219,7 +213,7 @@
       <workItem from="1673375136123" duration="91000" />
       <workItem from="1673375232874" duration="127000" />
       <workItem from="1673375365452" duration="91000" />
-      <workItem from="1673375463136" duration="4035000" />
+      <workItem from="1673375463136" duration="4670000" />
     </task>
     <task id="LOCAL-00001" summary="-add Link for timesheet detail">
       <created>1673373283368</created>
@@ -228,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673373283368</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-addding crontab for each Sat add a new timesheet detail and one line in timesummary">
+      <created>1673379579003</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673379579004</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +253,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-add Link for timesheet detail" />
-    <option name="LAST_COMMIT_MESSAGE" value="-add Link for timesheet detail" />
+    <MESSAGE value="-addding crontab for each Sat add a new timesheet detail and one line in timesummary" />
+    <option name="LAST_COMMIT_MESSAGE" value="-addding crontab for each Sat add a new timesheet detail and one line in timesummary" />
   </component>
 </project>

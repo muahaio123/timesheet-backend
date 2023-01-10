@@ -1,6 +1,5 @@
-package com.beaconfire.timesheetdetailservice.domain.entity;
+package com.beaconfire.timesheetsummaryservice.domain.entity;
 
-import com.beaconfire.timesheetdetailservice.domain.entity.Day;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

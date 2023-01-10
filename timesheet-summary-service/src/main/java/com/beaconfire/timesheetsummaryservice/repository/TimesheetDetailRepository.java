@@ -1,7 +1,6 @@
-package com.beaconfire.timesheetdetailservice.repository;
+package com.beaconfire.timesheetsummaryservice.repository;
 
-import com.beaconfire.timesheetdetailservice.domain.entity.TimesheetDetail;
-import com.beaconfire.timesheetdetailservice.domain.entity.TimesheetSummary;
+import com.beaconfire.timesheetsummaryservice.domain.entity.TimesheetDetail;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.data.mongodb.repository.MongoRepository;

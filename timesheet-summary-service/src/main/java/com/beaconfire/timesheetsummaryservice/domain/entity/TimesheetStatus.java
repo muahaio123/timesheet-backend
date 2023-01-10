@@ -1,6 +1,5 @@
-package com.beaconfire.timesheetdetailservice.domain.entity;
+package com.beaconfire.timesheetsummaryservice.domain.entity;
 
-import com.beaconfire.timesheetdetailservice.domain.entity.Day;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -16,19 +15,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @Builder
 @ToString
-@Document
-public class TimesheetDetail {
-  @Id
-  String id;
-  String employeeId;
+public class TimesheetStatus {
   String weekEnding;
   String totalHours;
-  Day day1;
-  Day day2;
-  Day day3;
-  Day day4;
-  Day day5;
-  Day day6;
-  Day day7;
-
+  String submissionStatus;
+  String approvalStatus;
 }

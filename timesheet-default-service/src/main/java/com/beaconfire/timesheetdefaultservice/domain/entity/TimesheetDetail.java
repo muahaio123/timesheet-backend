@@ -22,6 +22,7 @@ public class TimesheetDetail {
   String id;
   String employeeId;
   String weekEnding;
+  String totalHours;
   Day day1;
   Day day2;
   Day day3;

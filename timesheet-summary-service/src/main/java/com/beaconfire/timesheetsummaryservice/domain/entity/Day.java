@@ -1,6 +1,6 @@
-package com.beaconfire.timesheetdetailservice.domain.entity;
+package com.beaconfire.timesheetsummaryservice.domain.entity;
 
-import com.beaconfire.timesheetdetailservice.domain.entity.Day;
+import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -17,18 +17,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @ToString
 @Document
-public class TimesheetDetail {
+public class Day {
   @Id
   String id;
-  String employeeId;
-  String weekEnding;
+  String day;
+  String date;
+  String startTime;
+  String endTime;
   String totalHours;
-  Day day1;
-  Day day2;
-  Day day3;
-  Day day4;
-  Day day5;
-  Day day6;
-  Day day7;
+  String dayType;
 
 }

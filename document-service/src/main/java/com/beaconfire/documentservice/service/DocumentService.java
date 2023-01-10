@@ -16,9 +16,13 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -47,54 +51,70 @@ public class DocumentService {
         return documentDAO.getAllDocuments();
     }
 
-    public ResponseEntity<byte[]> uploadFile(String fileName, InputStream file, ObjectMetadata metaData) {
+    @Transactional
+    public void deleteByDocumentId(Integer id){
+        documentDAO.deleteByDocumentId(id);
+    }
+
+    @Transactional
+    public List<Document> getDocumentById(Integer id){
+        return documentDAO.getDocumentById(id);
+    }
+
+    @Transactional
+    public List<Document> getDocumentByEmployeeId(Integer employeeId){
+        return documentDAO.getDocumentByEmployeeId(employeeId);
+    }
+
+    public List<Bucket> getBucketList(){
+        return amazonS3.listBuckets();
+    }
+
+
+
+    public List<S3ObjectSummary> listObjects(){
+        ObjectListing objectListing = amazonS3.listObjects(bucketName);
+        return objectListing.getObjectSummaries();
+    }
+
+    private  File convertMultiPartToFile(MultipartFile file) throws IOException {
+        File convFile = new File(file.getOriginalFilename());
+        FileOutputStream fos = new FileOutputStream(convFile);
+        fos.write(file.getBytes());
+        fos.close();
+        return convFile;
+    }
+
+    private  String generateFileName(MultipartFile multiPart) {
+        return new Date().getTime() + "-" + multiPart.getOriginalFilename().replace(" ", "_");
+    }
+
+    private  void uploadFileTos3bucket(String fileName, File file) {
+        amazonS3.putObject(bucketName, fileName, file);
+    }
+
+    public String uploadFile(MultipartFile multipartFile) {
+        String fileUrl = "";
         try {
-            amazonS3.putObject(new PutObjectRequest(bucketName, fileName, file, metaData));
-        } catch (AmazonServiceException ase) {
-            log.info("Caught an AmazonServiceException, which means your request made it " +
-                    "to Amazon S3, but was rejected with an error response for some reason.");
-            log.info("Error Message:    " + ase.getMessage());
-            log.info("HTTP Status Code: " + ase.getStatusCode());
-            log.info("AWS Error Code:   " + ase.getErrorCode());
-            log.info("Error Type:       " + ase.getErrorType());
-            log.info("Request ID:       " + ase.getRequestId());
-        } catch (AmazonClientException ace) {
-            log.info("Caught an AmazonClientException, which means the client encountered " +
-                    "a serious internal problem while trying to communicate with S3, " +
-                    "such as not being able to access the network.");
-            log.info("Error Message: " + ace.getMessage());
+            File file = convertMultiPartToFile(multipartFile);
+            String fileName = generateFileName(multipartFile);
+//            fileUrl = "http://s3." + awsConfig.getEndPointUrl() + ".amazonaws.com/" + awsConfig.getBucketName() + "/" + fileName;
+            fileUrl = "http://" + bucketName + ".s3.amazonaws.com/" + fileName;
+
+            uploadFileTos3bucket(fileName, file);
+            file.delete();
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        return ResponseEntity.ok().build();
-    }
-
-    public ResponseEntity<byte[]> downloadFile(String keyName) throws IOException {
-        S3Object s3object = amazonS3.getObject(new GetObjectRequest(bucketName, keyName));
-        S3ObjectInputStream inputStream = s3object.getObjectContent();
-        byte[] bytes = IOUtils.toByteArray(inputStream);
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(contentType(keyName));
-        headers.setContentLength(bytes.length);
-        headers.setContentDispositionFormData("attachment", keyName);
-
-        return new ResponseEntity<>(bytes, headers, HttpStatus.OK);
+        return fileUrl;
     }
 
 
-    private MediaType contentType(String filename) {
-        String[] fileArrSplit = filename.split("\\.");
-        String fileExtension = fileArrSplit[fileArrSplit.length - 1];
-        switch (fileExtension) {
-            case "txt":
-                return MediaType.TEXT_PLAIN;
-            case "png":
-                return MediaType.IMAGE_PNG;
-            case "jpg":
-                return MediaType.IMAGE_JPEG;
-            case "pdf":
-                return MediaType.APPLICATION_PDF;
-            default:
-                return MediaType.APPLICATION_OCTET_STREAM;
-        }
+    public void deleteFileFromS3(String link){
+        amazonS3.deleteObject(bucketName, link);
     }
+
+
+
 }

@@ -1,6 +1,7 @@
 package com.beaconfire.documentservice.DAO;
 
 import com.beaconfire.documentservice.domain.Document;
+import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -13,7 +14,25 @@ public class DocumentDAO extends AbstractHibernateDAO<Document>{
         return getCurrentSession().createQuery("from Document ").list();
     }
 
+    public List<Document> getDocumentById(Integer id){
+        Query q = getCurrentSession().createQuery("from Document where id = :id");
+        q.setParameter("id", id);
+        return q.list();
+    }
+
+    public List<Document> getDocumentByEmployeeId(Integer employeeId){
+        Query q = getCurrentSession().createQuery("from Document where EmployeeID = :employeeId");
+        q.setParameter("employeeId", employeeId);
+        return q.list();
+    }
+
     public void addDocument(Document document) {
         add(document);
+    }
+
+    public void deleteByDocumentId(Integer id){
+        getCurrentSession().createNativeQuery("delete from documents where id = :id")
+                .setParameter("id", id)
+                .executeUpdate();
     }
 }

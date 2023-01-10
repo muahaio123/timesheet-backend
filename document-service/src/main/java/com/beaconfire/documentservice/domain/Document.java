@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name="document")
+@Table(name="documents")
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor

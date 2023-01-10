@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource("classpath:application.yml")
 public class AwsS3Config {
     @Value("${cloud.aws.credentials.access-key}")
     private String accessKey;

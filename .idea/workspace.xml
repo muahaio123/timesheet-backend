@@ -156,6 +156,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.TimesheetDetailServiceApplication" />
+      <item itemvalue="Spring Boot.TimesheetDefaultServiceApplication" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
+      <item itemvalue="Spring Boot.ContactServiceApplication" />
+      <item itemvalue="Spring Boot.EmployeeServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaDiscoveryServiceApplication" />
+      <item itemvalue="Spring Boot.ProfileCompositeServiceApplication" />
+      <item itemvalue="Spring Boot.TimesheetCompositeServiceApplication" />
+      <item itemvalue="Spring Boot.TimesheetSummaryServiceApplication" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -190,5 +202,16 @@
     <option featureType="dependencySupport" implementationName="maven-packaging:war" />
     <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

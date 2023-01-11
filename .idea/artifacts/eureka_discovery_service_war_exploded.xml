@@ -108,6 +108,18 @@
           <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:2.3.7" />
           <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:3.0.12" />
           <element id="library" level="project" name="Maven: com.sun.activation:jakarta.activation:1.2.2" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-commons:3.1.5" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.69" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-server:3.1.4" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcutil-jdk15on:1.69" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-client:3.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:3.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-rsa:1.0.11.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-loadbalancer:3.1.5" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-context:3.1.5" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-loadbalancer:3.1.5" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter:3.1.5" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.69" />
         </element>
       </element>
       <element id="directory" name="META-INF">

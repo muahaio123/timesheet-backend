@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="758a5639-33cd-4383-ac7d-a9bad88016c6" name="Changes" comment="update to Composite Services">
+    <list default="true" id="758a5639-33cd-4383-ac7d-a9bad88016c6" name="Changes" comment="update api gateway for CORS policies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/beaconfire/apigateway/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/beaconfire/apigateway/filter/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673433020110</updated>
       <workItem from="1673433025886" duration="7121000" />
-      <workItem from="1673460256287" duration="1851000" />
+      <workItem from="1673460256287" duration="3555000" />
     </task>
     <task id="LOCAL-00001" summary="Update pom.xml and add netflix eureka">
       <created>1673460816228</created>
@@ -174,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673460816228</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update api gateway for CORS policies">
+      <created>1673469626496</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673469626496</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +221,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update pom.xml and add netflix eureka" />
     <MESSAGE value="update to Composite Services" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to Composite Services" />
+    <MESSAGE value="update api gateway for CORS policies" />
+    <option name="LAST_COMMIT_MESSAGE" value="update api gateway for CORS policies" />
   </component>
 </project>

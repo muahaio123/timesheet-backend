@@ -12,7 +12,7 @@ spring:
             allowedMethods:
               - GET
               - POST
-              - UPDATE
+              - PUT
               - DELETE
 
 # config has been changed to: com.beaconfire.apigateway.config.GatewayConfig

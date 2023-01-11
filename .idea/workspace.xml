@@ -5,33 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="758a5639-33cd-4383-ac7d-a9bad88016c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/eureka_discovery_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/eureka_discovery_service_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_68.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_68.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_loadbalancer_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_loadbalancer_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/config/RestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/controller/CompositeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/entity/Day.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/entity/DefaultTimesheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/entity/Link.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/entity/TimeSheetStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/entity/TimesheetDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/entity/TimesheetSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/service/CompositeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/service/remote/RemoteTimeSheetDefaultService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/service/remote/RemoteTimesheetDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/service/remote/RemoteTimesheetSummaryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-discovery-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-discovery-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-composite-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/profile-composite-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-composite-service/src/main/java/com/beaconfire/profilecompositeservice/ProfileCompositeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile-composite-service/src/main/java/com/beaconfire/profilecompositeservice/ProfileCompositeServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-composite-service/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/timesheet-composite-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-composite-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/TimesheetCompositeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-composite-service/src/main/java/com/beaconfire/timesheetcompositeservice/TimesheetCompositeServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-composite-service/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,30 +51,33 @@
     </option>
   </component>
   <component name="ProjectId" id="2KB1AYpTtLxnIPZWudfZi6EtPRO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "55a8a6100d6358fd96af5b5bbd3f9f14",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;55a8a6100d6358fd96af5b5bbd3f9f14&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -161,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673433020110</updated>
-      <workItem from="1673433025886" duration="432000" />
+      <workItem from="1673433025886" duration="7121000" />
     </task>
     <servers />
   </component>
@@ -170,15 +174,21 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
-    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
-    <option featureType="dependencySupport" implementationName="java:com.google.inject:guice" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
     <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
     <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-s3" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-dynamodb" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:com.google.inject:guice" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-core" />
     <option featureType="dependencySupport" implementationName="maven-packaging:war" />
     <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
   </component>
 </project>

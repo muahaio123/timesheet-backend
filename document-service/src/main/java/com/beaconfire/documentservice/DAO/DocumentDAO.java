@@ -35,4 +35,11 @@ public class DocumentDAO extends AbstractHibernateDAO<Document>{
                 .setParameter("id", id)
                 .executeUpdate();
     }
+
+    public List<Document> getDocumentByTimeSheetId(Integer timesheetId){
+        Query q = getCurrentSession().createQuery("from Document where TimeSheetId = :timesheetId");
+        q.setParameter("timesheetId", timesheetId);
+        return q.list();
+
+    }
 }

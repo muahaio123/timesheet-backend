@@ -178,22 +178,17 @@ public class TimesheetController {
     return timesheetService.findAllByEmployeeId(id);
   }
 
-  @GetMapping("/employee/weekEnding/{id}")
-  public TimesheetDetail findTimesheetByWeekEnding(@PathVariable String id) {
-    //TODO Get the employeeId
-    String employeeId = "1";
+  @GetMapping("/employee/weekEnding/{employeeId}/{id}")
+  public TimesheetDetail findTimesheetByWeekEnding(@PathVariable String employeeId,@PathVariable String id) {
     return timesheetService.findByEmployeeIdAndWeekEnding(employeeId, id).get();
   }
 
-  @DeleteMapping("/delete/{weekEnding}")
-  public String deleteTimesheetById(@PathVariable String weekEnding) {
-    //TODO also delete summary part
-    //TODO Get the employeeId
-    String employeeId = "1";
+  @DeleteMapping("/delete/{employeeId}/{weekEnding}")
+  public String deleteTimesheetById(@PathVariable String employeeId,@PathVariable String weekEnding) {
+
     timesheetService.deleteByWeekEndingAndIdTimesheetDetail(employeeId, weekEnding);
     Optional<TimesheetSummary> timesheetSummary = timesheetService.findTimesheetSummaryByEmployeeId(
         employeeId);
-    System.out.println("here" + timesheetSummary.get());
     if (timesheetSummary.isPresent()) {
       ArrayList<TimesheetStatus> statusArrayList = (ArrayList<TimesheetStatus>) timesheetSummary.get()
           .getTimesheetStatusList();

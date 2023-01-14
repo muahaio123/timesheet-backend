@@ -53,6 +53,7 @@ public class LoginController {
         return EmployeeResponse.builder()
                 .message("Authentication successful! Welcome " + authUserDetail.getUsername())
                 .token(token)
+                .employeeId(authUserDetail.getEmployeeId())
                 .build();
     }
 }

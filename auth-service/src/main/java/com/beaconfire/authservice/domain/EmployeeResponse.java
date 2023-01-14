@@ -10,4 +10,5 @@ import lombok.Setter;
 public class EmployeeResponse {
     private String message;
     private String token;
+    private int employeeId;
 }

@@ -4,6 +4,7 @@
     <file type="web" url="file://$PROJECT_DIR$/api-gateway" />
     <file type="web" url="file://$PROJECT_DIR$/auth-service" />
     <file type="web" url="file://$PROJECT_DIR$/contact-service" />
+    <file type="web" url="file://$PROJECT_DIR$/document-service" />
     <file type="web" url="file://$PROJECT_DIR$/employee-service" />
     <file type="web" url="file://$PROJECT_DIR$/eureka-discovery-service" />
     <file type="web" url="file://$PROJECT_DIR$/profile-composite-service" />
@@ -25,10 +26,13 @@
         <option value="$PROJECT_DIR$/profile-composite-service/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-discovery-service/pom.xml" />
         <option value="$PROJECT_DIR$/employee-service/pom.xml" />
+        <option value="$PROJECT_DIR$/document-service/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>

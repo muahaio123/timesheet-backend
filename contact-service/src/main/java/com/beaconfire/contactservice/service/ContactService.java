@@ -1,7 +1,5 @@
 package com.beaconfire.contactservice.service;
 
-//import com.beaconfire.contactservice.config.HibernateSession;
-//import com.beaconfire.contactservice.dao.Contact1;
 import com.beaconfire.contactservice.dao.ContactDAO;
 import com.beaconfire.contactservice.dao.impl.ContactDaoImpl;
 import com.beaconfire.contactservice.entity.Contact;
@@ -10,7 +8,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.sql.SQLException;
 import java.util.List;
 
 @Service
@@ -41,8 +38,6 @@ public class ContactService {
     @Transactional
     public void addContact(Contact... contacts) {
         for (Contact contact : contacts) {
-//            if(contact.getFname().length()<5)
-//                throw new RuntimeException("firstname length invalid");
             contactDao.addContact(contact);
             System.out.println("Successfully add contact: " + contact.getName());
         }

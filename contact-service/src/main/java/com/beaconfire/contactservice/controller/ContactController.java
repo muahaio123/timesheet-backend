@@ -5,10 +5,8 @@ import com.beaconfire.contactservice.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.rmi.ServerException;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -23,19 +21,16 @@ public class ContactController {
     }
 
     @GetMapping
-    @ResponseBody
     public List<Contact> getAllContact() {
         return contactService.getAllContacts();
     }
 
     @GetMapping("getContactByID/{id}")
-    @ResponseBody
     public Contact getContactByID(@PathVariable Integer id) {
         return contactService.getContactByID(id);
     }
 
     @GetMapping("getContactsByEmployeeID/{id}")
-    @ResponseBody
     public List<Contact> getContactByEmployeeID(@PathVariable Integer id) {
         return contactService.getContactByEmployeeID(id);
     }
@@ -51,3 +46,4 @@ public class ContactController {
         contactService.deleteContact(id);
     }
 }
+

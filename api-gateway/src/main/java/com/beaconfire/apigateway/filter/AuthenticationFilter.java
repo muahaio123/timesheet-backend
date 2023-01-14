@@ -46,6 +46,7 @@ public class AuthenticationFilter implements GatewayFilter {
     private Mono<Void> onError(ServerWebExchange exchange, String err, HttpStatus httpStatus) {
         ServerHttpResponse response = exchange.getResponse();
         response.setStatusCode(httpStatus);
+        System.out.println(err);
         return response.setComplete();
     }
 

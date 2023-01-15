@@ -44,16 +44,7 @@
           <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.24" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.24" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:3.1.4" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter:3.1.5" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-context:3.1.5" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:5.7.6" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-commons:3.1.5" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-rsa:1.0.11.RELEASE" />
-          <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.69" />
-          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.69" />
-          <element id="library" level="project" name="Maven: org.bouncycastle:bcutil-jdk15on:1.69" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-server:3.1.4" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-actuator:2.7.7" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator-autoconfigure:2.7.7" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator:2.7.7" />
@@ -63,7 +54,6 @@
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-freemarker:2.7.7" />
           <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.31" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:5.3.24" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-client:3.1.4" />
           <element id="library" level="project" name="Maven: com.netflix.eureka:eureka-client:1.10.17" />
           <element id="library" level="project" name="Maven: com.netflix.netflix-commons:netflix-eventbus:0.3.0" />
           <element id="library" level="project" name="Maven: com.netflix.netflix-commons:netflix-infix:0.3.0" />
@@ -97,8 +87,6 @@
           <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.4" />
           <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:4.2.1" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-loadbalancer:3.1.5" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-loadbalancer:3.1.5" />
           <element id="library" level="project" name="Maven: io.projectreactor:reactor-core:3.4.26" />
           <element id="library" level="project" name="Maven: org.reactivestreams:reactive-streams:1.0.4" />
           <element id="library" level="project" name="Maven: io.projectreactor.addons:reactor-extra:3.4.9" />
@@ -108,6 +96,18 @@
           <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:2.3.7" />
           <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:3.0.12" />
           <element id="library" level="project" name="Maven: com.sun.activation:jakarta.activation:1.2.2" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-commons:3.1.5" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-client:3.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-rsa:1.0.11.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-loadbalancer:3.1.5" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-context:3.1.5" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcutil-jdk15on:1.69" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.69" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-server:3.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:3.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter:3.1.5" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.69" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-loadbalancer:3.1.5" />
         </element>
       </element>
       <element id="directory" name="META-INF">

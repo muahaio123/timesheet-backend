@@ -22,7 +22,6 @@ public class TimesheetSummary {
   String id;
   String employeeId;
   List<TimesheetStatus> timesheetStatusList;
-  String comment;
 
 
 }

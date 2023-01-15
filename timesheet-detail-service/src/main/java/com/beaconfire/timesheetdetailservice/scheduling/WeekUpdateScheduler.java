@@ -41,8 +41,21 @@ public class WeekUpdateScheduler {
     //TODO hardcode employeeId;
     //TODO should get all employee;
     String employeeId = "1";
-    System.out.println(date);
+    System.out.println("datetoStr"+dateToStr(date));
+    String day6=dateToStr(new Date(date.getTime()- (24 * 3600000)));
+    String day5=dateToStr(new Date(date.getTime()- (2 * 24 * 3600000)));
+    String day4=dateToStr(new Date(date.getTime()- (3 * 24 * 3600000)));
+    String day3=dateToStr(new Date(date.getTime()- (4 * 24 * 3600000)));
+    String day2=dateToStr(new Date(date.getTime()- (5 * 24 * 3600000)));
+    String day1=dateToStr(new Date(date.getTime()- (6 * 24 * 3600000)));
     Optional<DefaultTimesheet> timesheet = timesheetDefaultService.findByEmployeeId(employeeId);
+    timesheet.get().getDay1().setDate(day1);
+    timesheet.get().getDay2().setDate(day2);
+    timesheet.get().getDay3().setDate(day3);
+    timesheet.get().getDay4().setDate(day4);
+    timesheet.get().getDay5().setDate(day5);
+    timesheet.get().getDay6().setDate(day6);
+    timesheet.get().getDay7().setDate(dateToStr(date));
     TimesheetDetail timesheetDetail=TimesheetDetail.builder()
         .employeeId(employeeId)
         .totalHours(timesheet.get().getTotalHours())

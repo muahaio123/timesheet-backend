@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7cd0a01-71e1-42d6-9dc0-48e33cc3088c" name="Changes" comment="-change controlelr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/domain/EmployeeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/domain/EmployeeResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/controller/ContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/dao/AbstractHibernateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/dao/AbstractHibernateDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/dao/ContactDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/dao/ContactDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/dao/impl/ContactDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/dao/impl/ContactDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/service/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/src/main/java/com/beaconfire/contactservice/service/ContactService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/controller/TimesheetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/timesheet-detail-service/src/main/java/com/beaconfire/timesheetdetailservice/controller/TimesheetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,24 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "M:/Beaconfire/Assignment/Project3/timesheet-backend/timesheet-detail-service/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "2819d38add70501ab32b7e9207f4adb7",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;M:/Beaconfire/Assignment/Project3/timesheet-backend/timesheet-detail-service/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2819d38add70501ab32b7e9207f4adb7&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -138,10 +131,10 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.EmployeeServiceApplication" />
       <item itemvalue="Spring Boot.TimesheetSummaryServiceApplication" />
       <item itemvalue="Spring Boot.TimesheetDetailServiceApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
-      <item itemvalue="Spring Boot.EmployeeServiceApplication" />
       <item itemvalue="Spring Boot.EurekaDiscoveryServiceApplication" />
       <item itemvalue="Spring Boot.ProfileCompositeServiceApplication" />
       <item itemvalue="Spring Boot.TimesheetCompositeServiceApplication" />
@@ -171,8 +164,23 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-change controlelr" />
-    <option name="LAST_COMMIT_MESSAGE" value="-change controlelr" />
+    <MESSAGE value="Update pom.xml and add netflix eureka" />
+    <MESSAGE value="update to Composite Services" />
+    <MESSAGE value="update api gateway for CORS policies" />
+    <MESSAGE value="update Contact service to be able to update employee's contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Contact service to be able to update employee's contact" />
   </component>
 </project>

@@ -108,7 +108,32 @@ public class DocumentController {
         }
     }
 
+    @GetMapping("/timesheet/{timesheetId}")
+    public DocumentResponse getDocumentByTimeSheetId(@PathVariable int timesheetId){
+        List<Document> documents = documentService.getDocumentByTimeSheetId(timesheetId);
+        if (documents.size()>0) {
+            return DocumentResponse.builder()
+                    .status(
+                            ResponseStatus.builder()
+                                    .success(true)
+                                    .message("Document List has been returned")
+                                    .build()
+                    )
+                    .documentList(documents)
+                    .build();
+        }
+        else{
+            return DocumentResponse.builder()
+                    .status(
+                            ResponseStatus.builder()
+                                    .success(false)
+                                    .message("No Documents by the timesheet id exists")
+                                    .build()
+                    )
 
+                    .build();
+        }
+    }
 
 
 

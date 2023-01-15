@@ -20,4 +20,5 @@ public class TimesheetStatus {
   String totalHours;
   String submissionStatus;
   String approvalStatus;
+  String comment;
 }

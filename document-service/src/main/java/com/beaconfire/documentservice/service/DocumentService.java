@@ -66,6 +66,11 @@ public class DocumentService {
         return documentDAO.getDocumentByEmployeeId(employeeId);
     }
 
+    @Transactional
+    public List<Document> getDocumentByTimeSheetId(Integer timeSheetId){
+        return documentDAO.getDocumentByTimeSheetId(timeSheetId);
+    }
+
     public List<Bucket> getBucketList(){
         return amazonS3.listBuckets();
     }

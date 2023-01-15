@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="758a5639-33cd-4383-ac7d-a9bad88016c6" name="Changes" comment="update api gateway for CORS policies">
+    <list default="true" id="c7cd0a01-71e1-42d6-9dc0-48e33cc3088c" name="Changes" comment="-change controlelr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/domain/EmployeeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/beaconfire/authservice/domain/EmployeeResponse.java" afterDir="false" />
@@ -20,16 +20,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -44,7 +39,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2KB1AYpTtLxnIPZWudfZi6EtPRO" />
+  <component name="ProjectId" id="2KKLX4mN6LEhM6LTgauTRyD4Pwr" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -52,26 +47,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;130b904925014b836fc0d2a8e1dd22e0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "M:/Beaconfire/Assignment/Project3/timesheet-backend/timesheet-detail-service/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "2819d38add70501ab32b7e9207f4adb7",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -79,7 +72,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DocumentServiceApplication">
+  <component name="RunManager" selected="Spring Boot.EmployeeServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.apigateway.ApiGatewayApplication" />
@@ -90,27 +83,6 @@
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="auth-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.authservice.AuthServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="contact-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.contactservice.ContactServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DocumentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="document-service" />
-      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.documentservice.DocumentServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.beaconfire.documentservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,104 +136,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.TimesheetSummaryServiceApplication" />
       <item itemvalue="Spring Boot.TimesheetDetailServiceApplication" />
-      <item itemvalue="Spring Boot.TimesheetDefaultServiceApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
-      <item itemvalue="Spring Boot.ContactServiceApplication" />
       <item itemvalue="Spring Boot.EmployeeServiceApplication" />
       <item itemvalue="Spring Boot.EurekaDiscoveryServiceApplication" />
       <item itemvalue="Spring Boot.ProfileCompositeServiceApplication" />
       <item itemvalue="Spring Boot.TimesheetCompositeServiceApplication" />
-      <item itemvalue="Spring Boot.TimesheetSummaryServiceApplication" />
-      <item itemvalue="Spring Boot.ApiGatewayApplication" />
-      <item itemvalue="Spring Boot.DocumentServiceApplication" />
+      <item itemvalue="Spring Boot.TimesheetDefaultServiceApplication" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.DocumentServiceApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="758a5639-33cd-4383-ac7d-a9bad88016c6" name="Changes" comment="update api gateway for CORS policies" />
-      <created>1673433020110</created>
+      <changelist id="c7cd0a01-71e1-42d6-9dc0-48e33cc3088c" name="Changes" comment="-change controlelr" />
+      <created>1673718363328</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1673433020110</updated>
-      <workItem from="1673433025886" duration="7121000" />
-      <workItem from="1673460256287" duration="5624000" />
-      <workItem from="1673649969361" duration="1068000" />
+      <updated>1673718363328</updated>
+      <workItem from="1673718365369" duration="8463000" />
     </task>
-    <task id="LOCAL-00001" summary="Update pom.xml and add netflix eureka">
-      <created>1673460816228</created>
+    <task id="LOCAL-00001" summary="-change controlelr">
+      <created>1673720499473</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1673460816228</updated>
+      <updated>1673720499474</updated>
     </task>
-    <task id="LOCAL-00002" summary="update api gateway for CORS policies">
-      <created>1673469626496</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1673469626496</updated>
-    </task>
-    <task id="LOCAL-00003" summary="update api gateway for CORS policies">
-      <created>1673471490695</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1673471490695</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
-    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
-    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
-    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
-    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
-    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-s3" />
-    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-dynamodb" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
-    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
-    <option featureType="dependencySupport" implementationName="java:com.google.inject:guice" />
-    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-core" />
-    <option featureType="dependencySupport" implementationName="maven-packaging:war" />
-    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update pom.xml and add netflix eureka" />
-    <MESSAGE value="update to Composite Services" />
-    <MESSAGE value="update api gateway for CORS policies" />
-    <option name="LAST_COMMIT_MESSAGE" value="update api gateway for CORS policies" />
+    <MESSAGE value="-change controlelr" />
+    <option name="LAST_COMMIT_MESSAGE" value="-change controlelr" />
   </component>
 </project>

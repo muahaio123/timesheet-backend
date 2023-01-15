@@ -188,7 +188,7 @@ public class TimesheetController {
 
     timesheetService.deleteByWeekEndingAndIdTimesheetDetail(employeeId, weekEnding);
     Optional<TimesheetSummary> timesheetSummary = timesheetService.findTimesheetSummaryByEmployeeId(
-            employeeId);
+        employeeId);
     if (timesheetSummary.isPresent()) {
       ArrayList<TimesheetStatus> statusArrayList = (ArrayList<TimesheetStatus>) timesheetSummary.get()
               .getTimesheetStatusList();

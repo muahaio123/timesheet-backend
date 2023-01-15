@@ -48,4 +48,8 @@ public class ContactService {
         contactDao.deleteContact(id);
     }
 
+    @Transactional
+    public void updateContact(Contact contact) {
+        contactDao.updateContact(contact);
+    }
 }

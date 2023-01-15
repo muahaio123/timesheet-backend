@@ -46,5 +46,10 @@ public class ContactDaoImpl extends AbstractHibernateDAO<Contact> implements Con
         return query.executeUpdate() != 0;
     }
 
+    @Override
+    public void updateContact(Contact contact) {
+        super.updateObject(contact);
+    }
+
 
 }

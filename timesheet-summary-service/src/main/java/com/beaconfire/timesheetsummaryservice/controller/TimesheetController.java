@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -58,10 +59,8 @@ public class TimesheetController {
         .message("New TimeSheet summary saved")
         .build();
   }
-  @PostMapping("/edit/submissionStatus")
-  public MessageResponse editTimesheetSummarySubmissionStatus(@RequestBody SubmissionStatus submissionStatus){
-    //TODO change the hardcode employeeId;
-    String employeeId="1";
+  @PostMapping("/edit/submissionStatus/{employeeId}")
+  public MessageResponse editTimesheetSummarySubmissionStatus(@RequestBody SubmissionStatus submissionStatus,@PathVariable String employeeId){
     String weekEnding=submissionStatus.getWeekEnding();
     Optional<TimesheetSummary> timesheetSummary=timesheetService.findTimesheetSummaryByEmployeeId(employeeId);
     if(timesheetSummary.isPresent()){
@@ -94,10 +93,9 @@ public class TimesheetController {
           .build();
     }
   }
-  @PostMapping("/edit/approvalStatus")
-  public MessageResponse editTimesheetSummaryApprovalStatus(@RequestBody ApprovalStatus approvalStatus){
-    //TODO change the hardcode employeeId;
-    String employeeId="1";
+  @PostMapping("/edit/approvalStatus/{employeeId}")
+  public MessageResponse editTimesheetSummaryApprovalStatus(@RequestBody ApprovalStatus approvalStatus,@PathVariable String employeeId){
+
     String weekEnding=approvalStatus.getWeekEnding();
     Optional<TimesheetSummary> timesheetSummary=timesheetService.findTimesheetSummaryByEmployeeId(employeeId);
     if(timesheetSummary.isPresent()){

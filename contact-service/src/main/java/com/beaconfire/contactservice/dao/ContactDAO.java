@@ -16,4 +16,6 @@ public interface ContactDAO {
     List<Contact> getContactByEmployeeID(Integer id);
 
     Boolean deleteContact(Integer id);
+
+    void updateContact(Contact contact);
 }

@@ -41,6 +41,20 @@ public class ContactController {
         return new ResponseEntity<>(contact, HttpStatus.CREATED);
     }
 
+    @PostMapping("updateContact")
+    public ResponseEntity<Contact> updateContact(@RequestBody Contact contact) {
+        try {
+            System.out.println("In update Contact!");
+            contactService.updateContact(contact);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseEntity<>(contact, HttpStatus.BAD_REQUEST);
+        }
+
+        return new ResponseEntity<>(contact, HttpStatus.OK);
+    }
+
     @DeleteMapping("deleteContact/{id}")
     public void deleteContactById(@PathVariable Integer id) {
         contactService.deleteContact(id);

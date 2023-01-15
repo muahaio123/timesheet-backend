@@ -43,32 +43,32 @@ public class TimesheetController {
     String employeeId = timesheetDetail.getEmployeeId();
     String weekEnding = timesheetDetail.getWeekEnding();
     Optional<TimesheetDetail> timesheetDetail1 = timesheetService.findByEmployeeIdAndWeekEnding(
-        employeeId, weekEnding);
+            employeeId, weekEnding);
     if (timesheetDetail1.isPresent()) {
       TimesheetDetail timesheetDetail2 = TimesheetDetail.builder()
-          .id(timesheetDetail1.get().getId())
-          .employeeId(timesheetDetail.getEmployeeId())
-          .weekEnding(timesheetDetail.getWeekEnding())
-          .totalHours(timesheetDetail.getTotalHours())
-          .day1(timesheetDetail.getDay1())
-          .day2(timesheetDetail.getDay2())
-          .day3(timesheetDetail.getDay3())
-          .day4(timesheetDetail.getDay4())
-          .day5(timesheetDetail.getDay5())
-          .day6(timesheetDetail.getDay6())
-          .day7(timesheetDetail.getDay7())
-          .build();
+              .id(timesheetDetail1.get().getId())
+              .employeeId(timesheetDetail.getEmployeeId())
+              .weekEnding(timesheetDetail.getWeekEnding())
+              .totalHours(timesheetDetail.getTotalHours())
+              .day1(timesheetDetail.getDay1())
+              .day2(timesheetDetail.getDay2())
+              .day3(timesheetDetail.getDay3())
+              .day4(timesheetDetail.getDay4())
+              .day5(timesheetDetail.getDay5())
+              .day6(timesheetDetail.getDay6())
+              .day7(timesheetDetail.getDay7())
+              .build();
       timesheetService.updateTimesheetDetail(timesheetDetail2);
 
       if (timesheetService.findTimesheetSummaryByEmployeeId(timesheetDetail.getEmployeeId())
-          .isPresent()) {
+              .isPresent()) {
 
       }
       ArrayList<TimesheetStatus> statusArrayList = new ArrayList<>();
       if (timesheetService.findTimesheetSummaryByEmployeeId(timesheetDetail.getEmployeeId())
-          .isPresent()) {
+              .isPresent()) {
         TimesheetSummary timesheetSummary = timesheetService.findTimesheetSummaryByEmployeeId(
-            timesheetDetail.getEmployeeId()).get();
+                timesheetDetail.getEmployeeId()).get();
         statusArrayList = (ArrayList<TimesheetStatus>) timesheetSummary.getTimesheetStatusList();
         for (TimesheetStatus timesheetStatus : statusArrayList) {
           if (timesheetStatus.getWeekEnding().equals(timesheetDetail.getWeekEnding())) {
@@ -81,35 +81,35 @@ public class TimesheetController {
       }
 
       return MessageResponse.builder()
-          .serviceStatus(
-              ServiceStatus.builder()
-                  .success(true)
-                  .build()
-          )
-          .message("TimesheetDetail updated")
-          .build();
+              .serviceStatus(
+                      ServiceStatus.builder()
+                              .success(true)
+                              .build()
+              )
+              .message("TimesheetDetail updated")
+              .build();
     } else {
       TimesheetDetail timesheetDetail2 = TimesheetDetail.builder()
-          .id(timesheetDetail.getId())
-          .employeeId(timesheetDetail.getEmployeeId())
-          .weekEnding(timesheetDetail.getWeekEnding())
-          .totalHours(timesheetDetail.getTotalHours())
-          .day1(timesheetDetail.getDay1())
-          .day2(timesheetDetail.getDay2())
-          .day3(timesheetDetail.getDay3())
-          .day4(timesheetDetail.getDay4())
-          .day5(timesheetDetail.getDay5())
-          .day6(timesheetDetail.getDay6())
-          .day7(timesheetDetail.getDay7())
-          .build();
+              .id(timesheetDetail.getId())
+              .employeeId(timesheetDetail.getEmployeeId())
+              .weekEnding(timesheetDetail.getWeekEnding())
+              .totalHours(timesheetDetail.getTotalHours())
+              .day1(timesheetDetail.getDay1())
+              .day2(timesheetDetail.getDay2())
+              .day3(timesheetDetail.getDay3())
+              .day4(timesheetDetail.getDay4())
+              .day5(timesheetDetail.getDay5())
+              .day6(timesheetDetail.getDay6())
+              .day7(timesheetDetail.getDay7())
+              .build();
 
       timesheetService.addTimesheetDetail(timesheetDetail2);
 
       ArrayList<TimesheetStatus> statusArrayList = new ArrayList<>();
       if (timesheetService.findTimesheetSummaryByEmployeeId(timesheetDetail.getEmployeeId())
-          .isPresent()) {
+              .isPresent()) {
         TimesheetSummary timesheetSummary = timesheetService.findTimesheetSummaryByEmployeeId(
-            timesheetDetail.getEmployeeId()).get();
+                timesheetDetail.getEmployeeId()).get();
         statusArrayList = (ArrayList<TimesheetStatus>) timesheetSummary.getTimesheetStatusList();
         for (TimesheetStatus timesheetStatus : statusArrayList) {
           if (timesheetStatus.getWeekEnding().equals(timesheetDetail.getWeekEnding())) {
@@ -118,51 +118,51 @@ public class TimesheetController {
           }
         }
         statusArrayList.add(TimesheetStatus.builder()
-            .weekEnding(timesheetDetail.getWeekEnding())
-            .approvalStatus("N/A")
-            .submissionStatus("Not Started")
-            .totalHours(timesheetDetail.getTotalHours())
-            .build());
+                .weekEnding(timesheetDetail.getWeekEnding())
+                .approvalStatus("N/A")
+                .submissionStatus("Not Started")
+                .totalHours(timesheetDetail.getTotalHours())
+                .build());
         timesheetSummary.setTimesheetStatusList(statusArrayList);
         timesheetService.saveTimesheetSummary(timesheetSummary);
       } else {
         statusArrayList.add(TimesheetStatus.builder()
-            .weekEnding(timesheetDetail.getWeekEnding())
-            .approvalStatus("N/A")
-            .submissionStatus("Not Started")
-            .totalHours(timesheetDetail.getTotalHours())
-            .build());
+                .weekEnding(timesheetDetail.getWeekEnding())
+                .approvalStatus("N/A")
+                .submissionStatus("Not Started")
+                .totalHours(timesheetDetail.getTotalHours())
+                .build());
         TimesheetSummary timesheetSummary = TimesheetSummary.builder()
-            .employeeId(timesheetDetail.getEmployeeId())
-            .timesheetStatusList(statusArrayList)
-            .build();
+                .employeeId(timesheetDetail.getEmployeeId())
+                .timesheetStatusList(statusArrayList)
+                .build();
         timesheetService.saveTimesheetSummary(timesheetSummary);
       }
       if (!timesheetDefaultService.findByEmployeeId(timesheetDetail.getEmployeeId()).isPresent()) {
         DefaultTimesheet defaultTimesheet = DefaultTimesheet.builder()
-            .id(timesheetDetail.getId())
-            .employeeId(timesheetDetail.getEmployeeId())
-            .day1(timesheetDetail.getDay1())
-            .day2(timesheetDetail.getDay2())
-            .day3(timesheetDetail.getDay3())
-            .day4(timesheetDetail.getDay4())
-            .day5(timesheetDetail.getDay5())
-            .day6(timesheetDetail.getDay6())
-            .day7(timesheetDetail.getDay7())
-            .build();
+                .id(timesheetDetail.getId())
+                .employeeId(timesheetDetail.getEmployeeId())
+                .day1(timesheetDetail.getDay1())
+                .day2(timesheetDetail.getDay2())
+                .day3(timesheetDetail.getDay3())
+                .day4(timesheetDetail.getDay4())
+                .day5(timesheetDetail.getDay5())
+                .day6(timesheetDetail.getDay6())
+                .day7(timesheetDetail.getDay7())
+                .build();
 
         timesheetDefaultService.addOrUpdateTimesheetDefault(defaultTimesheet);
 
       }
 
       return MessageResponse.builder()
-          .serviceStatus(
-              ServiceStatus.builder()
-                  .success(true)
-                  .build()
-          )
-          .message("New TimesheetDetail created")
-          .build();
+              .serviceStatus(
+                      ServiceStatus.builder()
+                              .success(true)
+                              .build()
+              )
+              .message("New TimesheetDetail created")
+              .build();
 
     }
 
@@ -191,7 +191,7 @@ public class TimesheetController {
         employeeId);
     if (timesheetSummary.isPresent()) {
       ArrayList<TimesheetStatus> statusArrayList = (ArrayList<TimesheetStatus>) timesheetSummary.get()
-          .getTimesheetStatusList();
+              .getTimesheetStatusList();
       for (TimesheetStatus timesheetStatus : statusArrayList) {
         if (timesheetStatus.getWeekEnding().equals(weekEnding)) {
           System.out.println("i'm here to delete" + weekEnding);

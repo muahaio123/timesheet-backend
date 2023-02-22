@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7cd0a01-71e1-42d6-9dc0-48e33cc3088c" name="Changes" comment="-change controlelr">
+    <list default="true" id="c7cd0a01-71e1-42d6-9dc0-48e33cc3088c" name="Changes" comment="changed pom.xml for employee service to start workking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;M:/Beaconfire/Assignment/Project3/timesheet-backend/timesheet-detail-service/pom.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2819d38add70501ab32b7e9207f4adb7&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Long/Desktop/BeaconFire/Week9Day4/spring-repository-caching",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "130b904925014b836fc0d2a8e1dd22e0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -65,7 +65,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EmployeeServiceApplication">
+  <component name="RunManager" selected="Spring Boot.DocumentServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.apigateway.ApiGatewayApplication" />
@@ -76,6 +76,33 @@
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="auth-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.authservice.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="contact-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.contactservice.ContactServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beaconfire.contactservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DocumentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="document-service" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.documentservice.DocumentServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beaconfire.documentservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,6 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.EmployeeServiceApplication" />
@@ -139,7 +172,15 @@
       <item itemvalue="Spring Boot.ProfileCompositeServiceApplication" />
       <item itemvalue="Spring Boot.TimesheetCompositeServiceApplication" />
       <item itemvalue="Spring Boot.TimesheetDefaultServiceApplication" />
+      <item itemvalue="Spring Boot.ContactServiceApplication" />
+      <item itemvalue="Spring Boot.DocumentServiceApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.DocumentServiceApplication" />
+        <item itemvalue="Spring Boot.ContactServiceApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -150,6 +191,10 @@
       <option name="presentableId" value="Default" />
       <updated>1673718363328</updated>
       <workItem from="1673718365369" duration="8463000" />
+      <workItem from="1673875026995" duration="834000" />
+      <workItem from="1673883707583" duration="6475000" />
+      <workItem from="1673907763141" duration="6000" />
+      <workItem from="1675364108865" duration="1414000" />
     </task>
     <task id="LOCAL-00001" summary="-change controlelr">
       <created>1673720499473</created>
@@ -158,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673720499474</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changed pom.xml for employee service to start workking">
+      <created>1673820288645</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673820288645</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +233,7 @@
     <MESSAGE value="update to Composite Services" />
     <MESSAGE value="update api gateway for CORS policies" />
     <MESSAGE value="update Contact service to be able to update employee's contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Contact service to be able to update employee's contact" />
+    <MESSAGE value="changed pom.xml for employee service to start workking" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed pom.xml for employee service to start workking" />
   </component>
 </project>

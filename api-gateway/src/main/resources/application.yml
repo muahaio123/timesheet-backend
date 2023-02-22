@@ -15,15 +15,6 @@ spring:
               - PUT
               - DELETE
 
-# config has been changed to: com.beaconfire.apigateway.config.GatewayConfig
-#  cloud:
-#    gateway:
-#      routes:
-#        - id: auth-service
-#          uri: lb://auth-service # service name
-#          predicates:
-#            - Path=/auth-service/** # url pattern
-
 server:
   port: 9000
 
